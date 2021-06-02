@@ -18,11 +18,6 @@ mongoose.connect(process.env.DB_HOST || 'URI', {
 
 app.use(cors());
 
-// Middleware responsavel por tratar as exceptions
-app.use(function (err, req, res, next) {
-  return res.status(400).send({ message: err.message });
-});
-
 // Routes
 app.use(Lab, Exam);
 
