@@ -24,6 +24,16 @@
 - [x] Criação/atualização/remoção de exame e laboratório em lote
 - [x] Associação e desassociação de um exame ativo e laboratório ativo em lote
 
+## Respostas
+
+| Código | Descrição |
+|---|---|
+| `201` | Requisição executada com sucesso (aceita).|
+| `202` | Requisição executada com sucesso (Criação).|
+| `400` | Erro de validação.|
+| `404` | Dados não achados no sistema.|
+| `500` | Erro na requisição em lote|
+
 ## Install
 
     yarn install // npm install
