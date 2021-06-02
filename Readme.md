@@ -53,10 +53,9 @@
 ## Retorna uma lista de Laboratórios ativos    
 ### Request
 
-`GET /api/get/labs-active`
-
-    curl -i -H 'Accept: application/json' https://waproject.herokuapp.com/api/get/labs-active
-    
+`GET /lab`
+   
+    curl -i -H 'Accept: application/json' https://waproject.herokuapp.com/lab?page=0&limit=10 por padrão page e limit são 0 e 10     
 ### Response
 
     [{
@@ -370,9 +369,9 @@
   
 ### Request
 
-`GET /api/get/examsActive`
+`GET /exam`
 
-    curl -i -H 'Accept: application/json' https://waproject.herokuapp.com/api/get/examsActive
+    curl -i -H 'Accept: application/json' https://waproject.herokuapp.com/exam?page=0&limit=10 por padrão page e limit são 0 e 10 
     
     
 ### Response
